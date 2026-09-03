@@ -27,7 +27,7 @@ variable "instance_type" {
 }
 
 variable "key_name" {
-    default = "abhi"
+    default = "lokey"
 }
 
 variable "volume_size" {
