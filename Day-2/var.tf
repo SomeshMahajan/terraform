@@ -7,7 +7,7 @@ variable "public_cidr" {
 }
 
 variable "public_az" {
-    default = "us-west-2a"
+    default = "ap-south-1a"
 }
 
 variable "private_cidr" {
@@ -15,11 +15,11 @@ variable "private_cidr" {
 }
 
 variable "private_az" {
-    default = "us-west-2b"
+    default = "ap-south-1b"
 }
 
 variable "ami" {
-    default = "ami-0bea529386a62a2ad"
+    default = "ami-0c55b159cbfafe1f0"
 }
 
 variable "instance_type" {
