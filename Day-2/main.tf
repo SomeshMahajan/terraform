@@ -115,7 +115,7 @@ resource "aws_instance" "public_instance" {
     vpc_security_group_ids = [aws_security_group.sg.id]
     subnet_id = aws_subnet.public_subnet.id 
     associate_public_ip_address = true
-    user_data = file("/root/terraform/day-2/user.sh")
+    user_data = file("/home/ubuntu/terraform/day-2/user.sh")
 
     root_block_device {
         volume_size = var.volume_size
@@ -133,7 +133,7 @@ resource "aws_instance" "private_instance" {
     key_name = var.key_name
     vpc_security_group_ids = [aws_security_group.sg.id]
     subnet_id = aws_subnet.private_subnet.id 
-    user_data = file("/root/terraform/day-2/user.sh")
+    user_data = file("/home/ubuntu/terraform/day-2/user.sh")
     tags = {
         Name = "private_instance"
     }
