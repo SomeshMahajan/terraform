@@ -88,7 +88,7 @@ resource "aws_lb_listener" "listener" {
 
 resource "aws_launch_template" "lt" {
     name_prefix = "web-template"
-    image_id = "ami-01a00762f46d584a1"
+    image_id = "ami-01a00762f46d584a1" 
     key_name = "lokey"
     instance_type = "t3.micro"
     vpc_security_group_ids = [aws_security_group.sg.id]
