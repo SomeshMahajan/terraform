@@ -1,6 +1,6 @@
 #!/bin/bash
-sudo dnf update -y
-sudo dnf install -y nginx 
+sudo apt update -y
+sudo apt install nginx -y  
 sudo systemctl start nginx 
 sudo systemctl enable nginx 
 sudo rm -rf /usr/share/nginx/html/*
