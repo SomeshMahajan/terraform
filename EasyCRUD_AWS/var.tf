@@ -22,10 +22,10 @@ variable "private_cidr_2" {
     default = "10.0.12.0/24"
 }
 variable "private_az_1" {
-    default = "ap-south-1b"
+    default = "ap-south-1a"
 }
 variable "private_az_2" {
-    default = "ap-south-1c"
+    default = "ap-south-1b"
 }
 
 variable "private_db_cidr_1" {
