@@ -208,7 +208,7 @@ resource "aws_instance" "public_instance" {
 
   associate_public_ip_address = true
 
-  user_data = file("/home/ubuntu/terraform/EasyCRUD_AWS/user.sh")
+  user_data = file("/root/terraform/EasyCRUD_AWS/user.sh")
 
   root_block_device {
     volume_size = var.volume_size
@@ -232,7 +232,7 @@ resource "aws_instance" "private_instance" {
 
   subnet_id = aws_subnet.easycrud_private_app_1.id
 
-  user_data = file("/home/ubuntu/terraform/EasyCRUD_AWS/user.sh")
+  user_data = file("/root/terraform/EasyCRUD_AWS/user.sh")
 
   root_block_device {
     volume_size = var.volume_size
